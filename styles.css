@@ -232,6 +232,20 @@ body {
   outline-offset: 4px;
 }
 
+/* Credit footer */
+.credit {
+  margin-top: auto;
+  padding: 2rem 1rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.credit:hover {
+  color: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 380px) {
   .countdown-grid {
