@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown — Something Special</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="header">
+      <p class="subtitle">For you</p>
+      <h1 class="title">Something special at midnight</h1>
+      <p class="lead">When the clock strikes 12, a little surprise will appear.</p>
+    </header>
+
+    <section class="countdown-section" id="countdownSection">
+      <p class="countdown-label">Time until then</p>
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-block">
+          <span class="countdown-value" id="hours">00</span>
+          <span class="countdown-unit">hours</span>
+        </div>
+        <div class="countdown-block">
+          <span class="countdown-value" id="minutes">00</span>
+          <span class="countdown-unit">minutes</span>
+        </div>
+        <div class="countdown-block">
+          <span class="countdown-value" id="seconds">00</span>
+          <span class="countdown-unit">seconds</span>
+        </div>
+      </div>
+      <p class="midnight-note" id="midnightNote">Next 12:00 AM</p>
+    </section>
+
+    <section class="reveal-section hidden" id="revealSection">
+      <div class="reveal-card">
+        <p class="reveal-message">It’s time.</p>
+        <a href="#" class="cta-button" id="magicButton">Open your surprise</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
